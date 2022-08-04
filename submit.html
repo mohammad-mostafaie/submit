@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
+</head>
+<body>
+
+<h2>Modal Login Form</h2>
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn-1">Login</button>
+
+<div id="id01" class="modal">
+
+    <form class="modal-content animate" id="formId" action="" method="POST">
+        <div class="img-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label>
+                <b>Username:</b>
+                <input type="text" placeholder="Enter Username" name="Username" required>
+            </label>
+
+            <label>
+                <b>Password:</b>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            </label>
+
+            <label>
+                <b>age:</b>
+                <input type="number" placeholder="Enter your age" id="age2" name="age" required>
+            </label>
+
+            <button type="submit" onclick="document.getElementById('id01').style.display='none'" class="cancel-btn">
+                Cancel
+            </button>
+
+            <button type="button" id="submitButton" onclick="reload()" class="btn-2">Login</button>
+
+            <p id="demo"></p>
+
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
